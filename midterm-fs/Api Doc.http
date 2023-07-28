@@ -1,0 +1,36 @@
+
+###Submit Video Thumbnail
+POST http://localhost:3000/api/video-thumbnails
+Content-Type: application/json
+
+{
+  "urlImageThumbnail": "https://i.ytimg.com/vi/TVpjKSCGJ7g/hqdefault.jpg"
+}
+
+###Video Thumbnail List
+GET http://localhost:3000/api/video-thumbnails
+
+###Submit Product (change videoId if you want run)
+POST http://localhost:3000/api/video-thumbnails/64c01c1c2b9902067c5050e4/products
+Content-Type: application/json
+
+{
+  "linkProduct": "https://www.tokopedia.com/goldshopping-1/jumanji-the-video-game-ps5-kaset-ps5-jumanji-the-video-game-jumanji?extParam=ivf%3Dfalse&src=topads",
+  "title": "DVD 3",
+  "price": 50000
+}
+
+###Product List (change videoId if you want run)
+GET http://localhost:3000/api/video-thumbnails/64c01c1c2b9902067c5050e4/products
+
+###Submit Comment (change videoId if you want run)
+POST http://localhost:3000/api/video-thumbnails/64c01c1c2b9902067c5050e4/comments
+Content-Type: application/json
+
+{
+  "username": "Antonius",
+  "comment": "Feeling Good"
+}
+
+###Comment List (change videoId if you want run)
+GET http://localhost:3000/api/video-thumbnails/64c01c1c2b9902067c5050e4/comments
